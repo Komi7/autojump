@@ -101,6 +101,12 @@ Run the installation script and follow on screen instructions.
     cd autojump
     ./install.py or ./uninstall.py
 
+and add line .bashrc/.zshrc
+```shell
+[[ -s /home/$(USER_NAME)/.autojump/etc/profile.d/autojump.sh ]] && source /home/$(USER_NAME)/.autojump/etc/profile.d/autojump.sh
+
+    autoload -U compinit && compinit -u
+```
 ### AUTOMATIC
 
 #### Linux
