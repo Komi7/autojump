@@ -28,7 +28,7 @@ Please continue opening issues and providing feedback for community supported
 items since consolidating information helps other users troubleshoot and submit
 enhancements and fixes.
 
-### MANUAL
+### MANUAL /  NIXOS
 
 Grab a copy of autojump:
 
@@ -39,6 +39,12 @@ Run the installation script and follow on screen instructions.
     cd autojump
     ./install.py or ./uninstall.py
 
+and add line .bashrc/.zshrc
+```shell
+[[ -s /home/$(USER_NAME)/.autojump/etc/profile.d/autojump.sh ]] && source /home/$(USER_NAME)/.autojump/etc/profile.d/autojump.sh
+
+    autoload -U compinit && compinit -u
+```
 ### AUTOMATIC
 
 #### Linux
